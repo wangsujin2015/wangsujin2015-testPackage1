@@ -31,6 +31,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'testPackage/Classes/**/*'
+  s.public_header_files =  'testPackage/Classes/**/*'
+  # 需要对外部暴露的头文件
+   s.public_header_files = [
+     'testPackage/Classes/Person.h'
+   ]
   
   s.resource_bundles = {
      'testPackage' => ['testPackage/Assets/*.png']
