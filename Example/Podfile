@@ -1,0 +1,9 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'testPackage_Example' do
+  pod 'testPackage', :path => '../'
+  
+  
+end
