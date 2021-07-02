@@ -7,7 +7,21 @@
 //
 
 #import "Person.h"
+#import <Masonry/Masonry.h>
 
 @implementation Person
+
+- (void)dd {
+    UILabel *b = [UILabel new];
+    b.text = @"ddddd";
+    [self addSubview:b];
+    [b mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self);
+    }];
+    
+    NSLog(@"%@",b.mas_top);
+    
+}
+
 
 @end

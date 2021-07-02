@@ -36,6 +36,10 @@ Pod::Spec.new do |s|
    s.public_header_files = [
      'testPackage/Classes/Person.h'
    ]
+   
+   s.resource_bundles = {
+     'testPackage' => ['testPackage/Assets/*']
+   }
   
 
   s.resource = 'testPackage/Assets/testPackage.bundle'
@@ -46,4 +50,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
 end

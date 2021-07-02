@@ -20,8 +20,10 @@ PODS:
   - AFNetworking/UIKit (2.7.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - testPackage (1.0.0):
+  - Masonry (1.1.0)
+  - testPackage (1.0.2):
     - AFNetworking (~> 2.3)
+    - Masonry
 
 DEPENDENCIES:
   - testPackage (from `../`)
@@ -29,6 +31,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Masonry
 
 EXTERNAL SOURCES:
   testPackage:
@@ -36,7 +39,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
-  testPackage: 003dacfcb45db684a489f5aff0bfc4724bab018d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  testPackage: e26711610c398d66c797eedd043d525e0621e2e9
 
 PODFILE CHECKSUM: 1a413ea2896f537ab0c376352bdd39fb883c4c40
 
