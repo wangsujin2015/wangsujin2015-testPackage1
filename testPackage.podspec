@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'testPackage'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = '测试'
 
 # This description is used to generate tags and improve search results.
@@ -31,15 +31,17 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'testPackage/Classes/**/*'
-  s.public_header_files =  'testPackage/Classes/**/*'
+  #s.public_header_files =  'testPackage/Classes/**/*'
   # 需要对外部暴露的头文件
    s.public_header_files = [
      'testPackage/Classes/Person.h'
    ]
   
-  s.resource_bundles = {
-     'testPackage' => ['testPackage/Assets/*.png']
-  }
+
+  s.resource = 'testPackage/Assets/testPackage.bundle'
+    
+    # 是否是静态库，如果是静态库，需要设置该选项，默认为动态库
+  s.static_framework = true
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
