@@ -8,7 +8,7 @@
 
 #import "Person.h"
 #import <Masonry/Masonry.h>
-
+#import <SDWebImage/UIImageView+WebCache.h>
 @implementation Person
 
 - (void)dd {
@@ -18,6 +18,9 @@
     [b mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self);
     }];
+    UIImageView *c = [UIImageView new];
+    [c sd_setImageWithURL:[NSURL URLWithString:@""]];
+    [self addSubview:c];
     
     NSLog(@"%@",b.mas_top);
     

@@ -7,7 +7,7 @@
 //
 
 #import "NOViewController.h"
-
+#import "Person.h"
 @interface NOViewController ()
 
 @end
@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    Person *person =  [[Person alloc] init];
+    [person dd];
 }
 
 - (void)didReceiveMemoryWarning
